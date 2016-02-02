@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace JudgeResults
 {
-    public class Launcher
+    public static class Launcher
     {
         public static void Main()
         {
@@ -21,6 +21,8 @@ namespace JudgeResults
                     line = sr.ReadLine();
                 }
             }
+
+
 
             foreach (var name in names)
             {
