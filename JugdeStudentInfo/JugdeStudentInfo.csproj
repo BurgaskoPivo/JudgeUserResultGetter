@@ -47,6 +47,7 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -71,6 +72,7 @@
     <Compile Include="CookieAwareWebClient.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="HtmlJudgeUserResultExtractor.cs" />
     <Compile Include="JugdeInformationCollector.xaml.cs">
       <DependentUpon>JugdeInformationCollector.xaml</DependentUpon>
     </Compile>

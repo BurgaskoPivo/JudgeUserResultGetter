@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JugdeStudentInfo"
         mc:Ignorable="d"
-        Title="Jugde Information Collector" Height="720" Width="1280">
+        Title="Jugde Information Collector" Height="720" Width="600">
+
     <Grid>
+        <Grid Background="#FFF5D795" Height="390" Width="600" Margin="0, 0, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            
+            <Label Content="Input" HorizontalAlignment="Left" Margin="265,20,0,0" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold" Foreground="#FF8F4D0C"/>
+            <Label Content="List of Jugde Contests" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold"/>
+            <Label Content="List of Jugde Users" HorizontalAlignment="Left" Margin="325,50,0,0" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold"/>
+
+            <ListBox x:Name="FileBox" Height="100" Width="225" Margin="50, 100, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <ListBox x:Name="UserBox" Height="100" Width="225" Margin="325, 100, 0, 0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+            <Button x:Name="AddToFileBox" Content="Add File" HorizontalAlignment="Left" Margin="50, 225, 0, 0" VerticalAlignment="Top" Width="100" Height="30" Click="AddToFileBox_Click"/>
+            <Button x:Name="RemoveFromFileBox" Content="Remove File" HorizontalAlignment="Left" Margin="175, 225, 0, 0" VerticalAlignment="Top" Width="100" Height="30" Click="RemoveFromFileBox_Click"/>
+            <Button x:Name="AddToUserBoxFromTextBox" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="325, 265, 0, 0" Width="100" Height="30" Click="AddToUserBoxFromTextBox_Click"/>
+            <Button x:Name="RemoveFromUserBox" Content="Remove User" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450, 265, 0, 0" Width="100" Height="30" Click="RemoveFromUserBox_Click"/>
+            <Button x:Name="AddToUserBoxFromFile" Content="Add from File" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="325, 310, 0, 0" Width="100" Height="30" Click="AddToUserBoxFromFile_OnClick"/>
+            <Button x:Name="SaveUsersToFile" Content="Save to File" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450, 310, 0, 0" Width="100" Height="30" Click="SaveUsersToFile_OnClick"/>
+
+            <TextBox x:Name="UserNameBox" HorizontalAlignment="Left" Height="30" Margin="325, 225, 0, 0" TextWrapping="Wrap" ToolTip="Username" VerticalAlignment="Top" Width="225" PreviewKeyDown="UserNameBox_OnPreviewKeyDown"/>
+            
+        </Grid>
         
+        <Grid Background="#FFE8BA69" Height="310" Width="600" Margin="0, 390, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            
+            <Label Content="Output" HorizontalAlignment="Left" Margin="265,20,0,0" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold" Foreground="#FF8F4D0C"/>
+            
+        </Grid>
     </Grid>
+    
 </Window>
