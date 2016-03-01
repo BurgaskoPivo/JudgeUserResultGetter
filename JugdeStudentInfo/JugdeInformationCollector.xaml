@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JugdeStudentInfo"
         mc:Ignorable="d"
-        Title="Jugde Information Collector" Height="720" Width="600">
+        Title="Jugde Information Collector" Height="610" Width="600">
 
     <Grid>
         <Grid Background="#FFF5D795" Height="390" Width="600" Margin="0, 0, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -28,9 +28,12 @@
             
         </Grid>
         
-        <Grid Background="#FFE8BA69" Height="310" Width="600" Margin="0, 390, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid Background="#FFE8BA69" Height="200" Width="600" Margin="0, 390, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top">
             
             <Label Content="Output" HorizontalAlignment="Left" Margin="265,20,0,0" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold" Foreground="#FF8F4D0C"/>
+            
+            <Button x:Name="SaveResultsToFile" Content="Process Results To File" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,70,0,0" Width="200" Height="30" Click="SaveResultsToFile_Click"/>
+            <Button x:Name="SaveResultsToTable" Content="Process Results To Table" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,120,0,0" Width="200" Height="30" Click="SaveResultsToTable_Click"/>
             
         </Grid>
     </Grid>
